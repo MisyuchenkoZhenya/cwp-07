@@ -38,7 +38,7 @@ function sliceArray(payload, array){
     if(page <= 0 || limit <= 0) throw new Error();
     array.reverse();
     const arr = array.slice((page - 1) * limit, page * limit)
-    return arr; //payload["sortOrder"] === "asc" ? arr : arr.reverse();
+    return arr;
 }
 
 function createMeta(payload, articles){

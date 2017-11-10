@@ -9,7 +9,6 @@ const posts = {
 
 function parseBodyJson(req, cb) {
   let body = [];
-  //console.log(req.url);
 
   try{
     if(req.method === 'POST' || req.method === 'PUT' || req.method === 'DELETE'){

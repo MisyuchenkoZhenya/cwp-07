@@ -18,7 +18,7 @@ function getArticles(page = 1, asc = true){
         }, this);
         for(let index = 1; index < data.meta.pages + 1; index++){
             paginationStr += `
-            <li><button onclick="getArticles(${index})" class="btn btn-primary btn-xs"`;
+            <li><button onclick="getArticles(${index}, ${asc})" class="btn btn-primary btn-xs"`;
             if(index === page) paginationStr += ` id="darkbttn"`;
             paginationStr += `>${index}</button></li>
             `;

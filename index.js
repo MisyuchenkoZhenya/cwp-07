@@ -8,8 +8,6 @@ const LOG = require('./helpers/logger').LOG;
 const jsonPath = './content/articles.json';
 const _url = require('url');
 
-;
-
 const hostname = '127.0.0.1';
 const port = 3000;
 
