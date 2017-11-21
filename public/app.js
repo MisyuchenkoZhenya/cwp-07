@@ -4,7 +4,7 @@ function getArticles(page = 1, asc = true){
     let paginationStr = ``;
     let orderStr = ``;
     $.get('/api/articles', { "page": page, "sortOrder": sortOrder}, (data) => {
-        orderStr += `<button onclick="getArticles(1, ${!asc})" id="sortOrderBttn" class="btn btn-primary">Order:${sortOrder}</button>`        
+        orderStr += `<button onclick="getArticles(${page}, ${!asc})" id="sortOrderBttn" class="btn btn-primary">Order:${sortOrder}</button>`        
         data.items.forEach((element) => {
             articlesStr += `
             <div class="art">
